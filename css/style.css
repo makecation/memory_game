@@ -7,7 +7,7 @@ body {
 
 a:link {
   text-decoration: none;
-  color: inherit;
+  color: #F15B31;
 }
 
 h1, h2, h3 {
@@ -33,7 +33,6 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   background-color: #00A6B3;
-  color: #FFFFFF;
   padding: 20px 0px 0px 0px;
   margin: 0;
 }

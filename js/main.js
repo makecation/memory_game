@@ -1,18 +1,18 @@
 var cards = ["queen", "queen", "king", "king"];
 var cardsInPlay = [];
-
-var cardOne = cards[0];
-cardsInPlay.push(cards[0]);
-console.log("User flipped queen");
-
-var cardTwo = cards[2];
-cardsInPlay.push(cards[2]);
-console.log("User flipped king");
-
-//THIS IS WHERE I GET STUCK
-if (cardsInPlay.length === 2) {
-} else if (cardsInPlay[0] === cardsInPlay[1]) {
-  alert("You found a match!");
-} else {
-  alert("Sorry, try again.");
+var checkForMatch = function () {
+  if (cards[0] === cards[1]) {
+    console.log("You found a match!");
+  } else {
+    console.log("Sorry, try again.");
+  }
 }
+
+var flipcard = function (cardId) {
+  console.log("User flipped " + cards[cardId]);
+  cardsInPlay.push(cards[cardId]);
+  checkForMatch;
+}
+
+flipcard(0);
+flipcard(2);
